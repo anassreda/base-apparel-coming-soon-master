@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ 
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+ 
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+     height: 100vh;
+      display: flex;
+      background-color: hsl(0, 36%, 70%);
+    }
+    .container{
+      background-image:url('/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg' );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: white;
+    }
+    .Weare{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 61px;
+      letter-spacing: 10px;
+      font-weight: 200;
+      color: hsl(0, 36%, 70%);
+      
+    }
+    .coming{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 5rem;
+      font-weight: 400;
+      color: hsl(0, 1%, 21%);
+      line-height: 69px;
+    }
+  
+    p{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      color:hsl(0, 36%, 70%);
+      font-weight: 400;
+      
+    }
+    .btn-primary{
+      
+      background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));  
+      border: none;
+      box-shadow: 0px 1px 20px 5px hsl(0, 36%, 70%);
+}
+
+#inputEmail4{
+  font-family: 'Josefin Sans', sans-serif;
+ opacity: 0.8;
+ 
+}
+.arow{
+  position: relative;
+  left: -29px;
+}
+
+#erro{
+  display: none;
+  position: absolute;
+  top: 12%;
+  width: 11%;
+  right: 0;
+  z-index: 1;
+  left: 40%;
+
+}
+
+    
+  </style>  
+</head>
+<body>
+<div class="p-5 container ">
+  <div class="m-5 col-6">
+    <div>
+      <img src="./images/logo.svg" alt="" srcset="">
+    </div>
+    <div class="Weare mt-5"> We're</div>
+    <div class="coming mb-4" style="text-transform:uppercase;">Coming Soon</div>
+    <p>
+      Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
+      <form class="row mt-5 position-relative" id="form">
+        <svg id="erro"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><circle cx="12" cy="12" r="12" fill="#F96464"/><path fill="#FFF" fill-rule="nonzero" d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"/></g></svg>
+        <div class="col-7 pe-0">
+          <input type="email" class="form-control  email rounded-pill" id="inputEmail4" placeholder="Email Address" >
+        </div>        
+        <div class="col-2 ps-0  arow" >
+          <button type="submit" class="btn btn-primary  rounded-pill  " style="width: 100%; height: 100%;"><img src="/base-apparel-coming-soon-master/images/icon-arrow.svg" alt="" srcset=""></button>
+        </div>
+        <label id="none" for="" class="ms-4 mt-2 none" style="font-size: 11px; color: red; font-family:'Josefin Sans', sans-serif; display: none;">Pleas Provid a Valid Email</label>
+      </form>
+    </div>
+  </div>
+  <div>
+    <img class="d-block d-md-none"  src="./images/hero-mobile.jpg" alt="" srcset="">
+    <img class="d-none d-md-block" style="height: 100vh;" src="/base-apparel-coming-soon-master/images/hero-desktop.jpg" alt="" srcset="">
+  </div>
+
+
+
+  
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+ <script src="/base-apparel-coming-soon-master/script.js"></script>
+</body>
+</html>
